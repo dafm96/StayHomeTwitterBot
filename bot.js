@@ -4,7 +4,7 @@ const tweetBot = new Twit(config);
 
 
 var CronJob = require('cron').CronJob;
-var job = new CronJob('0 0 16 * * *', function () {
+var job = new CronJob('0 0 12 * * *', function () {
     let status = '';
     if (config.language === 'PT') {
         status = config.can_i_leave === 'FALSE' ? 'Não.' : 'Sim.';
